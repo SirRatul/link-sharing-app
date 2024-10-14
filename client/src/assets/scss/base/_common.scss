@@ -1,0 +1,98 @@
+@import './vars';
+
+/* minimum height set for whole body */
+#root {
+    min-height: 100vh !important;
+}
+
+/* ---------------------------------------------------
+    NAVBAR STYLE
+----------------------------------------------------- */
+.nav-link.active {
+    font-weight: bold !important;
+    color: $primary !important;
+}
+
+/* ---------------------------------------------------
+    INPUT STYLE
+----------------------------------------------------- */
+.form-control:focus, .form-select:focus {
+    border-color: $primary !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 1px $primary !important;
+}
+
+.input-group:focus-within {
+    outline: 1px solid $primary !important;
+}
+
+.input-group:focus-within *:focus {
+    border-color: transparent !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 0px $primary !important;
+}
+
+/* ---------------------------------------------------
+    MODAL STYLE
+----------------------------------------------------- */
+.modal-body {
+    padding-bottom: 0 !important;
+}
+
+.modal-footer {
+    padding-top: 0 !important;
+    border: none !important;
+}
+
+/* ---------------------------------------------------
+    POSITION STYLE
+----------------------------------------------------- */
+.top-50px {
+    top: 50px !important; 
+}
+
+.translate-x-50 {
+    transform: translateX(-50%) !important;
+}
+
+/* ---------------------------------------------------
+    COMPONENT STYLE
+----------------------------------------------------- */
+.preview-section {
+    row-gap: 46px !important;
+    padding-top: 113.5px !important;
+    display: grid !important;
+    width: fit-content !important;
+    margin-inline: auto !important;
+    border-radius: 24px !important;
+    text-align: center !important;
+    width: 268px !important;
+}
+
+.link-list {
+    display: grid !important;
+    row-gap: 20px !important;
+    margin-top: -1.65rem !important;
+}
+
+.user-info h2 {
+    height: 35px !important;
+}
+
+.user-info h2[data-transparent='true'] {
+    background-color: white !important;
+}
+
+.user-info h2[data-transparent='false'] {
+    background-color: transparent !important;
+}
+
+.user-info p {
+    height: 24px !important;
+}
+
+.user-info p[data-transparent='true'] {
+    background-color: white !important;
+}
+
+.user-info p[data-transparent='false'] {
+    background-color: transparent !important;
+}

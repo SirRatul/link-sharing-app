@@ -1,0 +1,23 @@
+{
+    "name": "link-sharing-app",
+    "version": "1.0.0",
+    "description": "A project that uses to see link preview",
+    "main": "index.js",
+    "scripts": {
+        "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\"",
+        "start:frontend": "cd client && npm start",
+        "start:backend": "cd server && npm start",
+        "test": "echo \"No tests specified\" && exit 0",
+        "build": "echo \"Build script for production\""
+    },
+    "devDependencies": {
+        "concurrently": "^6.0.0"
+    },
+    "author": "Samsul Islam",
+    "license": "MIT",
+    "keywords": [
+        "frontend",
+        "backend",
+        "concurrently"
+    ]
+}
